@@ -4,17 +4,12 @@
   "description": "MERN Todo App Backend",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js",
     "start": "node server.js",
-    "build": "echo 'No build step required'"
+    "dev": "nodemon server.js"
   },
-  "keywords": ["todo", "mern", "nodejs", "express"],
-  "author": "Your Name",
+  "keywords": ["todo", "mern", "express", "mongodb"],
+  "author": "",
   "license": "ISC",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
@@ -28,5 +23,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
