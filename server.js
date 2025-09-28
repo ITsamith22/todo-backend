@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI)
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-frontend-domain.com', 'https://your-mobile-app-domain.com'] 
+    ? ['https://your-frontend-domain.com', 'https://your-mobile-app-domain.com', '*'] // Allow all origins in production for now
     : ['http://localhost:3000', 'http://localhost:5173', 'http://192.168.8.178:3000'],
   credentials: true
 }));
